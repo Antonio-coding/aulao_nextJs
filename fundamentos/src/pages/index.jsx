@@ -1,9 +1,18 @@
+import Navegador from "@/components/Navegador";
+
 export default function Inicio() {
   return (
-    <div className="container">
-      <h1>Título</h1>
-      <h2>vamos começar </h2>
-      <h1>Título</h1>
+    <div style={{
+      display: "flex",
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexWrap:"wrap",
+      height: "100vh",
+    }}>
+      <Navegador texto="Estiloso"  destino="/estiloso" />
+      <Navegador texto="Exemplos" destino="/exemplos" cor = "#9400d3"/>
+      <Navegador texto="Jsx" destino="/jsx" cor="crimson"/>
+      <Navegador texto="Navegação #01" destino="/navegacao/" cor="green"/>
     </div>
   );
 }

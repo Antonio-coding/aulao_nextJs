@@ -1,7 +1,8 @@
-export default function Cabecalho(){
+export default function Cabecalho(props){
+ //Props é somente leitura
     return(
         <header>
-            <h1>Fundamentos de next.JS & React</h1>
+            <h1>{props.titulo}</h1>
         </header>
     )
 }
